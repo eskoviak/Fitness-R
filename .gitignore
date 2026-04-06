@@ -1,0 +1,7 @@
+**/Data Sets
+
+.RData
+.Rhistory
+
+**/*.png
+
