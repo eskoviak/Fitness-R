@@ -60,7 +60,7 @@ model_water <- lm(FBM ~ BodyWater, df[61:nrow(df), ])
 ggplot(df[61:nrow(df), ], aes(x = BodyWater, y = FBM)) +
   geom_point() +
   geom_abline(intercept = coef(model_water)[1], slope = coef(model_water)[2], color = "Blue") +
-  stat_cor(aes(label = after_stat(rr.label)))
+  stat_cor(aes(label = after_stat(rr.label)), label.x.npc = "left", label.y.npc = "bottom")
 
 ggsave("BodyWater corelation.png", width = 4, height = 3, dpi = 300)
 
